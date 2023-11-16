@@ -1,0 +1,218 @@
+/* * Fonts */
+/* LibreBaskerville */
+/* LibreBaskerville Regular */
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url(./fonts/LibreBaskerville/LibreBaskerville-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/* LibreBaskerville Bold */
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url(./fonts/LibreBaskerville/LibreBaskerville-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+/* LibreBaskerville Italic */
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url(./fonts/LibreBaskerville/LibreBaskerville-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Teko */
+/* Teko Regular */
+@font-face {
+  font-family: "Teko";
+  src: url(./fonts/Teko/Teko-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Teko Bold */
+@font-face {
+  font-family: "Teko";
+  src: url(./fonts/Teko/Teko-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* KdamThmorPro */
+@font-face {
+  font-family: "KdamThmorPro";
+  src: url(./fonts/KdamThmorPro/KdamThmorPro-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Kenia */
+@font-face {
+  font-family: "Kenia";
+  src: url(./fonts/Kenia/Kenia-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* * Styles */
+body {
+  background-color: #0f1418;
+  font-family: LibreBaskerville;
+  color: #dbd5cf;
+  font-size: 20px;
+}
+
+a {
+  color: #dbd5cf;
+}
+
+.header-wrapper {
+  border-bottom: 1px solid #ffffff2f;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+
+.logo {
+  font-family: Kenia;
+  margin-left: 70px;
+  font-size: 46px;
+}
+
+.navigation-list {
+  flex-direction: row;
+  margin-right: 70px;
+  display: flex;
+}
+
+.navigation-item {
+  font-family: KdamThmorPro;
+  margin-right: 60px;
+  position: relative;
+  font-size: 18px;
+}
+
+.navigation-item::after {
+  transition: 0.2s cubic-bezier(0.51, 0.93, 0.28, 0.7);
+  background-color: #ffc467;
+  position: absolute;
+  bottom: -6px;
+  content: "";
+  height: 3px;
+  width: 0%;
+  left: 0;
+}
+
+.navigation-item:hover::after {
+  width: 100%;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
+.navigation-item--active > a {
+  pointer-events: none;
+  color: #ffc467;
+}
+
+.navigation-item--active:hover::after {
+  display: none;
+}
+
+.banner-wrapper {
+  flex-direction: column;
+  margin: 0 120px;
+  display: flex;
+}
+
+.background-image {
+  margin: 100px 60px 0;
+  pointer-events: none;
+  border-radius: 5em;
+  align-self: center;
+  position: absolute;
+  overflow: hidden;
+  max-width: 1600px;
+  filter: blur(3px);
+  z-index: -1;
+  opacity: .4;
+}
+
+.background-image>img {
+  max-width: 1600px;
+  width: 100%;
+}
+
+.title {
+  font-family: KdamThmorPro;
+  margin-top: 114px;
+  font-size: 106px;
+}
+
+.subtitle {
+  max-width: 680px;
+  margin-top: 30px;
+}
+
+/* * Content */
+.content {
+  flex-direction: column;
+  margin-left: 360px;
+  margin-top: 60px;
+  max-width: 1200px;
+  text-align: end;
+  align-self: end;
+  display: flex;
+}
+
+.content-title {
+  font-family: KdamThmorPro;
+  font-size: 46px;
+}
+
+.content-text {
+  margin-top: 80px;
+}
+
+/* * Timeline */
+.timeline {
+  font-family: KdamThmorPro;
+  position: absolute;
+  top:560px
+}
+.timeline-item {
+  margin-bottom: 100px;
+  position: relative;
+  display: flex;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  background-color: #dbd5cf;
+  align-self: center;
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: -24px;
+  width: 7px;
+}
+
+.timeline-item--active>a {
+  pointer-events: none;
+  color: #ffc467;
+}
+
+.timeline-item--active::before {
+  border: 5px solid rgb(77, 21, 5);
+  background-color: #ff3600;
+  margin-left: -5px;
+}
