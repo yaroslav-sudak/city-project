@@ -1,8 +1,8 @@
 // * Slider
 // Slider variables
 let slider = document.getElementById("slider");
-let slideCount = slider.childElementCount;
-let slides = slider.children;
+let slideCount = slider?.childElementCount;
+let slides = slider?.children;
 let currentSlide = 0;
 
 // Slider function
@@ -40,7 +40,7 @@ for (let i = 0; i < timelineItems.length; i++) {
 }
 
 // * Scroll event
-window.addEventListener("wheel", function (event) {
+slider.addEventListener("wheel", function (event) {
   if (event.deltaY < 0) {
     // Scroll up
     currentSlide--;
@@ -61,7 +61,7 @@ window.addEventListener("wheel", function (event) {
 // * Touchscreen scroll event
 // Touch start point
 let touchStart;
-window.addEventListener("touchstart", (e) => {
+slider.addEventListener("touchstart", (e) => {
   touchStart = e.targetTouches[0].clientY;
 });
 
