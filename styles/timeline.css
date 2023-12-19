@@ -65,7 +65,7 @@ body {
 .timeline-section__item:nth-last-child(2) .timeline__point::after {
   border-right: 0;
 }
-
+  
 #timeline-section__active {
   border: 4px solid rgb(77, 21, 5);
   background-color: #ff3700;
@@ -109,6 +109,28 @@ body {
   background-size: auto 100%;
   position: absolute;
   height: 100%;
-  width: 100%;
   opacity: 0.4;
+  width: 100%;
+}
+
+.slide__content {
+  margin: 0 40px;
+}
+
+.slide__title {
+  font-family: KdamThmorPro;
+  margin-top: 114px;
+  font-size: 106px;
+}
+
+.slide__subtitle {
+  margin-top: 20px;
+  max-width: 1200px;
+}
+
+.slide__text {
+  margin-top: 30vh;
+  max-width: 1200px;
+  margin-left: auto;
+  text-align: end;
 }
