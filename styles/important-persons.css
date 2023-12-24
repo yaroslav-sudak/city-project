@@ -19,8 +19,8 @@
 .person__image {
   justify-content: center;
   border-radius: 15px;
-  max-height: 600px;
-  max-width: 400px;
+  max-height: 25vw;
+  max-width: 17vw;
   overflow: hidden;
   display: flex;
 }
@@ -37,7 +37,7 @@ img {
 .pop-up {
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   transition: .3s;
   display: flex;
   height: 100%;
@@ -56,7 +56,6 @@ img {
 }
 
 .pop-up__iframe {
-  border: 1px solid #0f1418;
   border-radius: 65px;
   height: 75%;
   width: 70%;
