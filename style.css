@@ -95,13 +95,14 @@ a {
 .header__logo {
   font-family: Kenia;
   margin-left: 70px;
-  font-size: 46px;
+  font-size: 68px;
 }
 
 .navigation__list {
   flex-direction: row;
   margin-right: 70px;
   display: flex;
+  
 }
 
 .navigation__item {
@@ -142,7 +143,7 @@ a {
 /* * Banner */
 .banner__wrapper {
   flex-direction: column;
-  margin: 0 120px;
+  margin: 0 6vw;
   display: flex;
 }
 
@@ -152,11 +153,11 @@ a {
   border-radius: 5em;
   align-self: center;
   position: absolute;
-  overflow: hidden;
   max-width: 1600px;
   filter: blur(3px);
-  z-index: -1;
+  overflow: hidden;
   opacity: 0.4;
+  z-index: -1;
 }
 
 .banner__background-image > img {
@@ -231,4 +232,38 @@ a {
   border: 5px solid rgb(77, 21, 5);
   background-color: #ff3600;
   margin-left: -5px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .header__logo {
+    font-size: 56px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header__logo {
+    font-size: 46px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .banner {
+    font-size: 18px;
+  }
+
+  .header__logo {
+    margin-left: 30px;
+  }
+
+  .navigation__list {
+    margin-right: 20px;
+  }
+
+  .banner__title {
+    font-size: 4em;
+  }
+
+  .content__title {
+    font-size: 2em;
+  }
 }

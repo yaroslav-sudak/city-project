@@ -19,8 +19,9 @@ body {
   position: relative;
   margin-top: 60px;
   max-width: 350px;
+  min-width: 220px;
   font-size: 20px;
-  width: 100%;
+  width: 30vw;
 }
 
 .timeline-section__item {
@@ -133,4 +134,24 @@ body {
   max-width: 1200px;
   margin-left: auto;
   text-align: end;
+}
+
+@media only screen and (max-width: 1400px) {
+  .slide__title {
+    font-size: 4ch;
+  }
+
+  .slide__text {
+    margin-top: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    font-size: 26px;
+  }
+
+  .slide__text {
+    margin-top: 8vw;
+  }
 }

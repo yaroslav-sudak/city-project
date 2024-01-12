@@ -47,7 +47,7 @@ img {
 }
 
 .pop-up__background {
-  background-color: #0f1418;
+  background-color: #222222;
   position: absolute;
   opacity: 0.7;
   height: 100%;
@@ -57,8 +57,8 @@ img {
 
 .pop-up__iframe {
   border-radius: 65px;
-  height: 75%;
-  width: 70%;
+  height: 85vh;
+  width: 90vw;
   z-index: 1;
 }
 
