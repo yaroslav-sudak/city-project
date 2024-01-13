@@ -68,6 +68,10 @@ img {
   opacity: 0;
 }
 
+.hidden .pop-up__iframe {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .banner__wrapper {
     grid-template-columns: 1fr 1fr 1fr;
