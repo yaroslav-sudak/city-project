@@ -42,6 +42,7 @@ img {
   display: flex;
   height: 100%;
   width: 100%;
+  z-index: 3;
   left: 0;
   top: 0;
 }
@@ -65,4 +66,28 @@ img {
 .hidden {
   pointer-events: none;
   opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 7%;
+  }
+
+  .person__image {
+    max-height: 35vw;
+    max-width: 25vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .banner__wrapper {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3%;
+  }
+
+  .person__image {
+    max-height: 60vw;
+    max-width: 35vw;
+  }
 }

@@ -1,88 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Project</title>
+  </head>
+  <!-- * Main page -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../normalize.css" />
-  <link rel="stylesheet" href="../style.css" />
-  <title>Project</title>
-</head>
-<!-- * Main page -->
-
-<body>
-  <!-- * Header -->
-  <div class="header">
-    <!-- Logo -->
-    <div class="header__wrapper">
-      <a href="../index.html" class="header__logo"> World War </a>
-      <div class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active">
-            <a href="./world-war-1.html" class="navigation__link">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="./timeline-1.html" class="navigation__link">Timeline</a>
-          </li>
-          <li class="navigation__item ">
-            <a href="" class="navigation__link">History</a>
-          </li>
-          <li class="navigation__item">
-            <a href="./important-persons-1.html" class="navigation__link">Important Persons</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">Facts</a>
-          </li>
-        </ul>
+  <body>
+    <!-- * Header -->
+    <div class="header">
+      <!-- Logo -->
+      <div class="header__wrapper">
+        <a href="../index.html" class="header__logo"> World War </a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./world-war-1.html" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item navigation__item--active">
+              <a href="./timeline-1.html" class="navigation__link">Timeline</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">History</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./important-persons-1.html" class="navigation__link"
+                >Important Persons</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Facts</a>
+            </li>
+          </ul>
+          <ul id="nav-menu" class="nav-menu nav-menu--hidden">
+            <li class="nav-menu__item nav-menu__item--active">
+              <a href="./world-war-1.html" class="nav-menu__link">Home</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="./timeline-1.html" class="nav-menu__link">Timeline</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">History</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="./important-persons-1.html" class="nav-menu__link"
+                >Important Persons</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Facts</a>
+            </li>
+            <div id="nav-menu__button" class="nav-menu__button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  fill="#ffffff"
+                  fill-rule="evenodd"
+                  d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+                />
+              </svg>
+            </div>
+          </ul>
+          <div id="nav-menu__background" class="nav-menu__background"></div>
+        </nav>
       </div>
     </div>
-  </div>
-  <div class="banner">
-    <div class="banner__wrapper">
-      <div class="banner__background-image">
-        <img src="../photos/world-war-1.jpg" alt="World War photo" />
-      </div>
-      <!-- Title -->
-      <div class="banner__title">World War I</div>
-      <!-- Subtitle -->
-      <div class="banner__subtitle">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-        sapiente iure nemo at unde doloribus quo obcaecati mollitia? Accusamus
-        odit at commodi aliquid veniam nam omnis consectetur reprehenderit ex
-        eos.
-      </div>
-      <div class="banner__content">
-        <div class="content__title">
-          Lorem ipsum dolor sit amet.
+    <div class="banner">
+      <div class="banner__wrapper">
+        <div class="banner__background-image">
+          <img src="../photos/world-war-1.jpg" alt="World War photo" />
         </div>
-        <div class="content__text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-            obcaecati impedit, culpa ipsa incidunt consequuntur aspernatur
-            distinctio facere optio id in excepturi saepe a tenetur tempora ea
-            perferendis, fuga possimus cum consequatur unde officiis! Aperiam
-            suscipit odio dolore expedita ipsum cum architecto perspiciatis
-            reiciendis, beatae illo distinctio explicabo inventore voluptate!
-          </p>
+        <!-- Title -->
+        <div class="banner__title">World War I</div>
+        <!-- Subtitle -->
+        <div class="banner__subtitle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+          sapiente iure nemo at unde doloribus quo obcaecati mollitia? Accusamus
+          odit at commodi aliquid veniam nam omnis consectetur reprehenderit ex
+          eos.
         </div>
-      </div>
-      <div class="timeline">
-        <ul class="timeline__list">
-          <li class="timeline__item timeline__item--active">
-            <a href="world-war-1.html">
-              World War I <span>(1914-1918)</span>
-            </a>
-          </li>
-          <li class="timeline__item">
-            <a href="world-war-2.html">
-              World War II <span>(1939-1945)</span>
-            </a>
-          </li>
-        </ul>
+        <div class="banner__content">
+          <div class="content__title">Lorem ipsum dolor sit amet.</div>
+          <div class="content__text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              obcaecati impedit, culpa ipsa incidunt consequuntur aspernatur
+              distinctio facere optio id in excepturi saepe a tenetur tempora ea
+              perferendis, fuga possimus cum consequatur unde officiis! Aperiam
+              suscipit odio dolore expedita ipsum cum architecto perspiciatis
+              reiciendis, beatae illo distinctio explicabo inventore voluptate!
+            </p>
+          </div>
+        </div>
+        <div class="timeline">
+          <ul class="timeline__list">
+            <li class="timeline__item timeline__item--active">
+              <a href="world-war-1.html">
+                World War I <span>(1914-1918)</span>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="world-war-2.html">
+                World War II <span>(1939-1945)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+    <script src="../scripts/navigation.js"></script>
+  </body>
 </html>

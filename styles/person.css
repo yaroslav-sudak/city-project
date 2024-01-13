@@ -32,3 +32,22 @@ img {
 .person__text {
   margin-top: 40px;
 }
+
+@media only screen and (max-width: 576px) {
+  .person__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .person__image {
+    margin-bottom: 20px;
+    max-height: 60vw;
+    max-width: 40vw;
+    margin-top: 0;
+  }
+
+  .person__content {
+    margin-left: 0;
+  }
+}
