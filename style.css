@@ -145,7 +145,7 @@ a {
   transition: .4s;
   flex-direction: column;
   align-items: center;
-  padding: 45px 2vw;
+  padding: 20px 2vw;
   position: fixed;
   display: none;
   height: 100%;
@@ -325,8 +325,13 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .navigation__list {
+  .header {
     display: none;
+  }
+
+  .header__logo {
+    margin-bottom: 30px;
+    margin-left: 0;
   }
 
   .nav-menu {
